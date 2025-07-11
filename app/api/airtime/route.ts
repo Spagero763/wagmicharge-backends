@@ -13,6 +13,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         // Respond with order details (including orderId for payment)
         res.status(201).json({ order });
     } catch (err) {
-        res.status(500).json({ error: 'Failed to create order' });
+        res.status(500).json({ error: 'Failed to create order' }); 
     }
 }
